@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>カードゲーム</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CardGame.css">
+    </head>
+    <body>
+        <div class="Column">
+            <div class="flex">
+                <p>相手の手札</p>
+                <div class="Cardsyou" id="4"></div>
+                <div class="Cardsyou" id="5"></div>
+                <div class="Cardsyou" id="6"></div>
+            </div>
+            <div class="margin"></div>
+            <div class="flex" id="delete">
+                <p id="tehuda">自分の手札</p>
+                <button class="Cardsme" id="1" onclick="process(0)"></button>
+                <button class="Cardsme" id="2" onclick="process(1)"></button>
+                <button class="Cardsme" id="3" onclick="process(2)"></button>
+            </div>
+            <p id="Win">勝利数：０</p>
+            <p id="Lose">敗北数：０</p>
+            <p id="Draw">引き分けの数：０</p>
+        </div>
+    </body>
+    <script src="./CardGame.js"></script>
+</html>
